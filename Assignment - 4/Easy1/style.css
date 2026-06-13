@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%
+
+}
+.main{
+    height:100%;
+    width:100%;
+    background-color: #030303;
+    display:grid;
+    padding:20px;
+    
+    grid-template-columns: 26% 24% 24% 26%;
+    grid-template-rows: 16% 20% 30% 15% 19%;
+    grid-template-areas: 
+    "top-left top-left top-center top-right"
+    "top-left top-left top-center photo2"
+    "bottom-left location top-center photo2"
+    "bottom-left badges reviews reviews"
+    "bottom-left appstore reviews reviews";
+    
+    
+    
+}
+
+.top-left{
+    grid-area:top-left;
+    background-color: #111111;
+    margin:5px;
+    
+    border-radius:20px;       
+    display:flex;
+    justify-content: center;  
+    align-items: center;
+    
+}
+.top-center{
+    grid-area:top-center;
+    
+    margin:5px;
+    border-radius:10px;
+    background-color:#17161B;
+}
+.top-right{
+    grid-area:top-right;
+    background-color: #793DCE;
+    margin:5px;
+    border-radius:10px;
+}
+.bottom-left{
+    grid-area:bottom-left;
+    background-color: #080808;
+    margin:5px;
+    border-radius:10px;
+    border-color: #D6F156;
+    border-width: 2px;
+    border-style: solid;
+}
+.location{
+    grid-area:location;
+    background-color:#17161B;
+    margin:5px;
+    border-radius:10px;
+}
+.badges{
+    grid-area:badges;
+    background-color:#17161B;
+    margin:5px;
+    border-radius:10px;
+}
+.appstore{
+    grid-area:appstore;
+    background-color: #D6F254;
+    margin:5px;
+    border-radius:10px;
+}
+.photo2{
+    grid-area:photo2;
+    background-color: #D6F254;
+    margin:5px;
+    border-radius:10px;
+}
+.reviews{
+    grid-area:reviews;
+    background-color: #FEFEFE;
+    margin:5px;
+    border-radius:10px;
+}
+
+
+.top-left .photo{
+    height: 90%;
+    width: 40%;
+    background-color: #9D53F2;
+    margin: 20px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+.top-left .photo img{
+    height: 95%;
+    
+}
+.top-left .flower{
+    height: 100%;
+    width: 60%;
+    background-color:#17161B;
+    border-radius: 20px;
+    
+}
