@@ -1,23 +1,18 @@
-// Add a button to the page and a list (array) of at least four colour names in your JavaScript
-// code. Every time the button is clicked, change the page's background colour to the next
-// colour in your list. When you reach the end of the list, the next click should loop back around
-// to the first colour again.
+// Add a text input or textarea to the page, along with a small piece of text below it that shows
+// how many characters the user has typed so far. As the user types or deletes letters, this
+// counter should update right away, with no button click or page refresh needed.
+
+let text=document.querySelector("h1");
+let input=document.querySelector("input");
 
 
-let colorArray=["#343D3F","yellow","pink","green"];
-let body=document.querySelector("body");
+let counter=0;
+input.addEventListener("input",function(){
+    
+    if(input.value.length>0){
+        counter=input.value.length;
+        text.innerHTML=`Counter:${counter}`
 
-let btn=document.querySelector("#change-color");
-let i=0;
-btn.addEventListener("click",function(){
-    
-    
-    
-    body.style.backgroundColor=colorArray[i];
-    i=i+1;
-    if(i>3){
-        i=0;
     }
-    
 
 })
