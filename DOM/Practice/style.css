@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%;
+    background-color: black;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.btn button{
+    padding:10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: crimson;
+    font-weight: 300;
+
+}
